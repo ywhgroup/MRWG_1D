@@ -13,13 +13,13 @@ In `RunOpt_1DMRWG.m`, define the optimization parameters, such as blur radius, m
 ## Grating parameters and optimization
 The `FoM_and_Grad.m` defines the MRWG parameters, such as waveguide layer thickness (Hw), grating layer thickness (Hg), materials' refractive index and optimization function.
 
-The “%% Blur function & contrast function” section in `FoM_and_Grad.m` is used to define Rho2 and Rho3. The optimization contrast can be controlled by adjusting “beta” and “cutoff”.
+The `%% Blur function & contrast function` section in `FoM_and_Grad.m` is used to define Rho2 and Rho3. The optimization contrast can be controlled by adjusting “beta” and “cutoff”.
 
-The “%% Reticolo 1D structure definition” section in `FoM_and_Grad.m` is used to convert the MRWG structure into the RETICOLO format. For detailed RETICOLO syntax, please refer to the following the paper [RETICOLO software for grating analysis](https://arxiv.org/abs/2101.00901).
+The `%% Reticolo 1D structure definition` section in `FoM_and_Grad.m` is used to convert the MRWG structure into the RETICOLO format. For detailed RETICOLO syntax, please refer to the following the paper [RETICOLO software for grating analysis](https://arxiv.org/abs/2101.00901).
 
-The “%% Forward calculation, FoM” section in `FoM_and_Grad.m` uses RETICOLO to calculate the MRWG Efficiency (Abs_Efficiency) and the forward electric field (ForwardField).
+The `%% Forward calculation, FoM` section in `FoM_and_Grad.m` uses RETICOLO to calculate the MRWG Efficiency (Abs_Efficiency) and the forward electric field (ForwardField).
 
-The “%% Adjoint calculation, gradient of FoM” section in `FoM_and_Grad.m` uses RETICOLO to calculate the Adjoint electric field (AdjointField). Then, based on Eq. S3, it calculates ∂FoM/∂Rho3 (Gradient2) and uses the chain rule to backpropagate ∂FoM/∂Rho1 (Gradient) to ρ1 (PatternIn). fmincon optimizes ρ1 (PatternIn) according to the   (Gradient) calculated in “FoM_and_Grad.m”.
+The `%% Adjoint calculation, gradient of FoM` section in `FoM_and_Grad.m` uses RETICOLO to calculate the Adjoint electric field (AdjointField). Then, based on Eq. S3, it calculates ∂FoM/∂Rho3 (Gradient2) and uses the chain rule to backpropagate ∂FoM/∂Rho1 (Gradient) to ρ1 (PatternIn). fmincon optimizes ρ1 (PatternIn) according to the   (Gradient) calculated in `FoM_and_Grad.m`.
 
 ## Citation
 Please cite this code as:

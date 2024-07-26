@@ -24,6 +24,5 @@ The `%% Adjoint calculation, gradient of FoM` section in `FoM_and_Grad.m` uses R
 ## Citation
 If you use this code for your research, please cite:
 
-[Topology Optimization Enables High-Q Metasurface for Color Selectivity](https://doi.org/10.1021/acs.nanolett.4c01858)
-
+[Topology Optimization Enables High-Q Metasurface for Color Selectivity](https://doi.org/10.1021/acs.nanolett.4c01858) <br>
 Huan-Teng Su, Lu-Yun Wang, Chih-Yao Hsu, Yun-Chien Wu, Chang-Yi Lin, Shu-Ming Chang, and Yao-Wei Huang.

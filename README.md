@@ -8,10 +8,10 @@ RETICOLO - rigourous coupled wave analysis (RCWA) solver. Can be downloaded from
 ## Quick Start
 Run `RunOpt_1DMRWG.m` with default parameters. The example optimization should begin immediately if all files have been installed correctly.
 
-In “RunOpt_1DMRWG.m”, define the optimization parameters, such as blur radius, maximum iteration limits for fmincon, optimization minimum step, and the upper and lower bounds for the target optimization structure (e. g., 0~1).
+In `RunOpt_1DMRWG.m`, define the optimization parameters, such as blur radius, maximum iteration limits for fmincon, optimization minimum step, and the upper and lower bounds for the target optimization structure (e. g., 0~1).
 
 ## Grating parameters and optimization
-The “FoM_and_Grad.m” defines the MRWG parameters, such as waveguide layer thickness (Hw), grating layer thickness (Hg), materials' refractive index and optimization function.
+The `FoM_and_Grad.m` defines the MRWG parameters, such as waveguide layer thickness (Hw), grating layer thickness (Hg), materials' refractive index and optimization function.
 
 The “%% Blur function & contrast function” section in “FoM_and_Grad.m” is used to define Rho2 and Rho3. The optimization contrast can be controlled by adjusting “beta” and “cutoff”.
 

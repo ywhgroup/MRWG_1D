@@ -1,6 +1,6 @@
 clc; clear; clear all; close all;
 
-addpath(genpath('reticolo_allege_v9'));
+addpath(genpath('reticolo_allege'));
 addpath(genpath('Functions'));
 FileName = string(datetime('now','Format','yyyyMMdd'));
 LoadGoodInitialRho = 1;     % 1: loading a good Rho0; 0: generating a new Rho0

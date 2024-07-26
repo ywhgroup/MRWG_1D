@@ -19,7 +19,7 @@ The `%% Reticolo 1D structure definition` section in `FoM_and_Grad.m` is used to
 
 The `%% Forward calculation, FoM` section in `FoM_and_Grad.m` uses RETICOLO to calculate the MRWG Efficiency (Abs_Efficiency) and the forward electric field (ForwardField).
 
-The `%% Adjoint calculation, gradient of FoM` section in `FoM_and_Grad.m` uses RETICOLO to calculate the Adjoint electric field (AdjointField). Then, based on Eq. S3, it calculates ∂FoM/∂Rho3 (Gradient2) and uses the chain rule to backpropagate ∂FoM/∂Rho1 (Gradient) to ρ1 (PatternIn). fmincon optimizes ρ1 (PatternIn) according to the   (Gradient) calculated in `FoM_and_Grad.m`.
+The `%% Adjoint calculation, gradient of FoM` section in `FoM_and_Grad.m` uses RETICOLO to calculate the Adjoint electric field (AdjointField). Then, based on Eq. S3, it calculates ∂FoM/∂Rho3 (Gradient2) and uses the chain rule to backpropagate ∂FoM/∂Rho1 (Gradient) to Rho1 (PatternIn). fmincon optimizes Rho1 (PatternIn) according to the   (Gradient) calculated in `FoM_and_Grad.m`.
 
 ## Citation
 Please cite this code as:

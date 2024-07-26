@@ -6,7 +6,7 @@ Matlab 2022b or later. Earlier versions might work but have not been verified.
 RETICOLO - rigourous coupled wave analysis (RCWA) solver. Can be downloaded from [RETICOLO](https://www.lp2n.institutoptique.fr/equipes-de-recherche-du-lp2n/light-complex-nanostructures). Copy the folder `reticolo_allege_v9` into the working directory.
 
 ## Quick Start
-Run “RunOpt_1DMRWG.m” with default parameters. The example optimization should begin immediately if all files have been installed correctly.
+Run `RunOpt_1DMRWG.m` with default parameters. The example optimization should begin immediately if all files have been installed correctly.
 
 In “RunOpt_1DMRWG.m”, define the optimization parameters, such as blur radius, maximum iteration limits for fmincon, optimization minimum step, and the upper and lower bounds for the target optimization structure (e. g., 0~1).
 

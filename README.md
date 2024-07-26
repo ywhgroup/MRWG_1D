@@ -22,7 +22,8 @@ The `%% Forward calculation, FoM` section in `FoM_and_Grad.m` uses RETICOLO to c
 The `%% Adjoint calculation, gradient of FoM` section in `FoM_and_Grad.m` uses RETICOLO to calculate the Adjoint electric field (AdjointField). Then, based on Eq. S3, it calculates ∂FoM/∂Rho3 (Gradient2) and uses the chain rule to backpropagate ∂FoM/∂Rho1 (Gradient) to Rho1 (PatternIn). fmincon optimizes Rho1 (PatternIn) according to the   (Gradient) calculated in `FoM_and_Grad.m`.
 
 ## Citation
-Please cite this code as:
+If you use this code for your research, please cite:
 
 [Topology Optimization Enables High-Q Metasurface for Color Selectivity](https://doi.org/10.1021/acs.nanolett.4c01858)
+
 Huan-Teng Su, Lu-Yun Wang, Chih-Yao Hsu, Yun-Chien Wu, Chang-Yi Lin, Shu-Ming Chang, and Yao-Wei Huang.
